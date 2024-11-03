@@ -1,0 +1,40 @@
+version = 1
+requires-python = ">=3.12"
+
+[[package]]
+name = "ebook-tokenizer"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "sudachidict-core" },
+    { name = "sudachipy" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "sudachidict-core", specifier = ">=20241021" },
+    { name = "sudachipy", specifier = "==0.6.8" },
+]
+
+[[package]]
+name = "sudachidict-core"
+version = "20241021"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sudachipy" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c0/29/011b71bb5f361ba805f491c123c28496cea1ac334cfb290c77f0a36bc6b2/SudachiDict-core-20241021.tar.gz", hash = "sha256:a9d84946f15e040ebf3943ef2b8f0e169c92fb8cf3ce00395bed2698a892069d", size = 9012 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/29/c6/feb396dc9c03d5c198cc2245024bef7383f844945b3b3af40200682ca804/SudachiDict_core-20241021-py3-none-any.whl", hash = "sha256:c5b61f4b4be5ec76895a51aae051fb8b303a62b3a964f858350edf0d84205378", size = 72063182 },
+]
+
+[[package]]
+name = "sudachipy"
+version = "0.6.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/49/91/fb79084df253ffce217fe10dcad6729e5263f41813b9ab7e4375e01528bd/SudachiPy-0.6.8.tar.gz", hash = "sha256:3d1c9086ff09afacc34d02fdb2112aab7cff1d78f0d4b81f78b9ba01c36d4888", size = 161941 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e8/fd/9288521653a59a8f261bc5f29a5cadea134e45a690b9f2c9ad20d5464665/SudachiPy-0.6.8-cp312-cp312-macosx_10_12_universal2.whl", hash = "sha256:7f75d4627fa141bc02951c5ce17ec7055faf2e9424d10c697e923c27b7936369", size = 2963966 },
+    { url = "https://files.pythonhosted.org/packages/79/54/1da84327f26de09d865f23c7bfd30a66fb1fe078f8185ee69bfa5600e032/SudachiPy-0.6.8-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:33afa2efa4d98ae3cbea0ab8cc09c71b0405d188074d0c4cef2b2080a51caafe", size = 2568552 },
+    { url = "https://files.pythonhosted.org/packages/57/dd/175671837c8a82c56acdaab3df4ae453f89bddc6a5537859144608469481/SudachiPy-0.6.8-cp312-cp312-win_amd64.whl", hash = "sha256:2a2f22605093ed7994eb7edced2a21c8ac71b9ecc9877e94539414b1a60d172a", size = 1250564 },
+]

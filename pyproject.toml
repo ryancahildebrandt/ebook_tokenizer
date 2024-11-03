@@ -1,0 +1,13 @@
+[project]
+name = "ebook-tokenizer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sudachidict-core>=20241021",
+    "sudachipy==0.6.8",
+]
+
+[tool.uv.workspace]
+members = ["help"]
